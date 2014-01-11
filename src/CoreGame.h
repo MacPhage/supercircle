@@ -33,6 +33,7 @@ int heartbeatCount = 0;
 void heartbeat();
 void sink();
 void printAllValues();
+bool checkCollision();
 void dropWall0();
 void dropWall1();
 
@@ -94,6 +95,49 @@ void printAllValues()
     cout<<"wall0.occupationA1 = "<<wall0.getOccupationA1()<<endl;
     cout<<"wall0.occupationA2 = "<<wall0.getOccupationA2()<<endl;
     cout<<"wall0.arcRadius = "<<wall0.getRadius()<<endl;
+}
+
+bool checkCollision()
+{
+    if(player.getRadius() == wall0.getRadius() || player.getRadius()+1 == wall0.getRadius() || player.getRadius()-1 == wall0.getRadius())
+    {
+        if(player.getOccupationA1() > wall0.getOccupationA1() && player.getOccupationA1() < wall0.getOccupationA2())
+        {
+            return true;
+        }
+        else if(player.getOccupationA2() > wall0.getOccupationA1() && player.getOccupationA2() < wall0.getOccupationA2())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    else if(player.getRadius() == wall1.getRadius() || player.getRadius()+1 == wall1.getRadius() || player.getRadius()-1 == wall1.getRadius())
+    {
+        //
+    }
+    else if(player.getRadius() == wall2.getRadius() || player.getRadius()+1 == wall2.getRadius() || player.getRadius()-1 == wall2.getRadius())
+    {
+        //
+    }
+    else if(player.getRadius() == wall3.getRadius() || player.getRadius()+1 == wall3.getRadius() || player.getRadius()-1 == wall3.getRadius())
+    {
+        //
+    }
+    else if(player.getRadius() == wall4.getRadius() || player.getRadius()+1 == wall4.getRadius() || player.getRadius()-1 == wall4.getRadius())
+    {
+        //
+    }
+    else if(player.getRadius() == wall5.getRadius() || player.getRadius()+1 == wall5.getRadius() || player.getRadius()-1 == wall5.getRadius())
+    {
+        //
+    }
+    else
+    {
+        return false;
+    }
 }
 
 void dropWall0()

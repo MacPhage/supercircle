@@ -32,6 +32,13 @@ int main()
         currentKey = getch();
         delay(1);
         heartbeat();
+        //Collision checking
+        if(checkCollision() == true)
+        {
+            cout<<"\n** COLLISION OCCURED **"<<endl;
+            system("PAUSE");
+            break;
+        }
         sink();
         
         

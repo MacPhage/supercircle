@@ -5,11 +5,11 @@
 #define GAME02_PRIVATE_H
 
 /* VERSION DEFINITIONS */
-#define VER_STRING	"0.1.1.38"
+#define VER_STRING	"0.1.1.41"
 #define VER_MAJOR	0
 #define VER_MINOR	1
 #define VER_RELEASE	1
-#define VER_BUILD	38
+#define VER_BUILD	41
 #define COMPANY_NAME	""
 #define FILE_VERSION	""
 #define FILE_DESCRIPTION	""
