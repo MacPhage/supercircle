@@ -48,7 +48,7 @@ int main()
         if(currentKey == KEY_DOWN)
         {
             cout<<"(KEY_DOWN)"<<endl;
-            dropWall(wall0);
+            dropWall0();
         }
         if(currentKey == KEY_LEFT)
         {

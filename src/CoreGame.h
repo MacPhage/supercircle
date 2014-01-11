@@ -28,14 +28,17 @@ char currentKey;
 int centerCircleRadius = windowX / 8;
 int gameSpeed = 5;
 int printOccurence = 0;
+int heartbeatCount = 0;
 
 void heartbeat();
 void sink();
 void printAllValues();
-void dropWall();
+void dropWall0();
+void dropWall1();
 
 void heartbeat()
 {
+    heartbeatCount++;
     //Recalculating occupations before refreshing the screen
     player.calcOccupationA1();
     player.calcOccupationA2();
@@ -65,24 +68,39 @@ void heartbeat()
 void sink()
 {
     //Reduce all wall radius by 1
+    if(wall0.getRadius() > (centerCircleRadius - 1))
+    {
+        wall0.subtractRadius(1);
+    }
+    else
+    {
+        dropWall0();
+    }
 }
 
 void printAllValues()
 {
     printOccurence++;
     cout<<"[ printOccurence = "<<printOccurence<<" ]"<<endl;
+    cout<<"heartbeatCount = "<<heartbeatCount<<endl;
     cout<<"player.arcLength = "<<player.getLength()<<endl;
     cout<<"player.arcOffset = "<<player.getOffset()<<endl;
     cout<<"player.occupationA1 = "<<player.getOccupationA1()<<endl;
     cout<<"player.occupationA2 = "<<player.getOccupationA2()<<endl;
     cout<<"player.arcRadius = "<<player.getRadius()<<endl;
+    cout<<endl;
+    cout<<"wall0.arcLength = "<<wall0.getLength()<<endl;
+    cout<<"wall0.arcOffset = "<<wall0.getOffset()<<endl;
+    cout<<"wall0.occupationA1 = "<<wall0.getOccupationA1()<<endl;
+    cout<<"wall0.occupationA2 = "<<wall0.getOccupationA2()<<endl;
+    cout<<"wall0.arcRadius = "<<wall0.getRadius()<<endl;
 }
 
-void dropWall(GameArc falling)
+void dropWall0()
 {
-    falling.setLength(90);
-    falling.setOffset(50); //RANDOM NUMBER BETWEEN 0 and 360
-    falling.setRadius(200);
-    falling.calcOccupationA1();
-    falling.calcOccupationA2();
+    wall0.setLength(90);
+    wall0.setOffset(50); //RANDOM NUMBER BETWEEN 0 and 360
+    wall0.setRadius(300);
+    wall0.calcOccupationA1();
+    wall0.calcOccupationA2();
 }
