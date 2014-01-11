@@ -10,9 +10,7 @@
 //  http://www.ruthlessphysics.com/potent/
 //
 
-#include <iostream>
-#include <graphics.h>
-#include "LibVenom.h"
+#include "GameMenu.h"
 
 //WINBGIm COLORS
 #define BLACK 0

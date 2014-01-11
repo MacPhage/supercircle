@@ -15,6 +15,9 @@
 #include <cstdlib>
 #include <stdlib.h>
 #include <conio.h>
+#include <iostream>
+#include <iostream>
+#include <graphics.h>
 
 //WINBGIm COLORS
 #define BLACK 0
@@ -62,6 +65,8 @@
 
 using namespace std;
 
+bool willQuit;
+
 void pauseConsole()
 {
     cout<<"Press any key to continue . . ."<<endl;
@@ -108,4 +113,9 @@ int randIntBetween(int from, int to)
 string combineStrings(string A, string B)
 {
     return A+B;
+}
+
+int exit()
+{
+	return 0;
 }

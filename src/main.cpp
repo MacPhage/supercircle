@@ -18,6 +18,12 @@ using namespace std;
 
 int main()
 {
+    gameMenu();
+    if(willQuit == true)
+    {
+        return 0;
+    }
+
 	initwindow(windowX,windowY,"Potent \'Game02\'");
 	
 	player.setRadius(centerCircleRadius+20);
