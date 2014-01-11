@@ -40,6 +40,10 @@ int main()
         if(checkCollision() == true)
         {
             cout<<"\n** COLLISION OCCURED **"<<endl;
+            setcolor(LIGHTRED);
+            outtextxy(0,0,"** COLLISION OCCURED **");
+            outtextxy(0,20,"Press any key in the console window to quit.");
+            setcolor(WHITE);
             system("PAUSE");
             break;
         }

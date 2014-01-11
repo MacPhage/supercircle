@@ -22,8 +22,8 @@ GameArc wall3;
 GameArc wall4;
 GameArc wall5;
 
-int windowX = 400;
-int windowY = 400;
+int windowX = 600;
+int windowY = 600;
 char currentKey;
 int keyTimer;
 int centerCircleRadius = windowX / 8;
@@ -149,7 +149,7 @@ void dropWall0()
 {
     wall0.setLength(90);
     wall0.setOffset(50); //RANDOM NUMBER BETWEEN 0 and 360
-    wall0.setRadius(300);
+    wall0.setRadius((windowX/2)+(windowX/4));
     wall0.calcOccupationA1();
     wall0.calcOccupationA2();
 }
