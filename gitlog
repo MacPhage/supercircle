@@ -1,3 +1,27 @@
+[33mcommit ca820184a22835ecb713d0a9c39b7c90e420365a[m
+Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
+Date:   Sat Jan 11 15:51:50 2014 -0600
+
+    [build 110] Removed compile warning, included version information on startup, and disabled invincibility.
+
+[33mcommit 2b46d8022e665c8c8d9e330bf4e6a87e11003730[m
+Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
+Date:   Sat Jan 11 15:43:11 2014 -0600
+
+    [build 102] Added a title screen
+
+[33mcommit 155c22ce2081a68605e310a4287f1c5885d7fec8[m
+Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
+Date:   Sat Jan 11 14:56:44 2014 -0600
+
+    Removed logFile1 from the index
+
+[33mcommit 92ccdb898a98302b9f7a07179e5fc5d98198fd36[m
+Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
+Date:   Sat Jan 11 14:55:29 2014 -0600
+
+    [build 97] Reworked collisions and basic gameplay; compensation for wall collision bug for items past 360
+
 [33mcommit 6f7bec6e62093dc62e836c085633cdb30d94f8ed[m
 Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
 Date:   Sat Jan 11 01:46:30 2014 -0600
