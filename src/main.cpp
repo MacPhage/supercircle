@@ -11,13 +11,21 @@
 //
 
 #include "CoreGame.h"
+#include "Game02_private.h"
 
 using namespace std;
 
-
+int release = VER_RELEASE;
 
 int main()
 {
+    cout<<"Version: "<<VER_STRING<<endl;
+    if(release == 0)
+    {
+        cout<<"THIS IS PRE-RELEASE SOFTWARE!"<<endl;
+        system("PAUSE");
+        cout<<"Please select the graphics window."<<endl;
+    }
     gameMenu();
     if(willQuit == true)
     {

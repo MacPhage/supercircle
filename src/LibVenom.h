@@ -114,8 +114,3 @@ string combineStrings(string A, string B)
 {
     return A+B;
 }
-
-int exit()
-{
-	return 0;
-}

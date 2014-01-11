@@ -31,7 +31,7 @@ int gameSpeed = 5;
 int printOccurence = 0;
 int heartbeatCount = 0;
 int selectedWall = 0;
-bool invincible = true;
+bool invincible = false;
 
 void heartbeat();
 void sink();
