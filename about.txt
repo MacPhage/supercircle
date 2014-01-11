@@ -1,0 +1,21 @@
+﻿About "Game02"
+
+- - - - - -
+
+
+"Game02" is the codename for Austin Jackson's C++ layman recreation of the game "Super Hexagon"
+but using circles instead of Hexagons, as they're easier to draw and control in WINBGIm.
+
+
+
+
+	Thanks for downloading my software! :)
+
+		-Austin Jackson
+
+PLEASE LEAVE SOME FEEDBACK!
+	email: mac@ruthlessphysics.com
+	twitter: @MacPhage
+	website: ruthlessphysics.com/potent/
+
+This document was last updated on Friday, January 11, 2014.
