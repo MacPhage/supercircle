@@ -84,6 +84,11 @@ class GameArc
 		{
 			occupationA1 = (getLength()/2) * (-1) + getOffset();
 		}
+        void setOccupationA1(int newOccupation)
+        {
+            //In semi-rare cases, we may need to manually override occupation to insure collision
+            occupationA1 = newOccupation;
+        }
 		
 		int getOccupationA2()
 		{
@@ -93,6 +98,11 @@ class GameArc
 		{
 			occupationA2 = (getLength()/2) + getOffset();
 		}
+		void setOccupationA2(int newOccupation)
+		{
+            //In semi-rare cases, we may need to manually override occupation to insure collision
+            occupationA2 = newOccupation;
+        }
 		
         bool getState()
         {
