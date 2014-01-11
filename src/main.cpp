@@ -29,7 +29,11 @@ int main()
 	
 	for(;;)
 	{
-        currentKey = getch();
+        if(kbhit())
+        {
+            currentKey = getch();
+            keyTimer = 2;
+        }
         delay(1);
         heartbeat();
         //Collision checking
@@ -40,24 +44,22 @@ int main()
             break;
         }
         sink();
-        
-        
-        if(currentKey == KEY_ESC)
+        if(currentKey == KEY_ESC && keyTimer > 0)
         {
             cout<<"(KEY_ESC)"<<endl;
             break;
         }
-        if(currentKey == KEY_UP)
+        else if(currentKey == KEY_UP && keyTimer > 0)
         {
             cout<<"(KEY_UP)"<<endl;
             printAllValues();
         }
-        if(currentKey == KEY_DOWN)
+        else if(currentKey == KEY_DOWN && keyTimer > 0)
         {
             cout<<"(KEY_DOWN)"<<endl;
             dropWall0();
         }
-        if(currentKey == KEY_LEFT)
+        else if(currentKey == KEY_LEFT && keyTimer > 0)
         {
             cout<<"(KEY_LEFT)"<<endl;
             if(player.getOffset()+gameSpeed > 360)
@@ -72,7 +74,7 @@ int main()
             player.calcOccupationA1();
             player.calcOccupationA2();
         }
-        if(currentKey == KEY_RIGHT)
+        else if(currentKey == KEY_RIGHT && keyTimer > 0)
         {
             cout<<"(KEY_RIGHT)"<<endl;
             if(player.getOffset()-gameSpeed < 0)

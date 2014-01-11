@@ -25,6 +25,7 @@ GameArc wall5;
 int windowX = 400;
 int windowY = 400;
 char currentKey;
+int keyTimer;
 int centerCircleRadius = windowX / 8;
 int gameSpeed = 5;
 int printOccurence = 0;
@@ -40,6 +41,10 @@ void dropWall1();
 void heartbeat()
 {
     heartbeatCount++;
+    if(keyTimer > 0)
+    {
+        keyTimer--;
+    }
     //Recalculating occupations before refreshing the screen
     player.calcOccupationA1();
     player.calcOccupationA2();
