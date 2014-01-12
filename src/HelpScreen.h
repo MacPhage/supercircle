@@ -82,6 +82,7 @@ void drawHelpScreen()
     if(selectedMenuItem == 0)
     {
         setcolor(LIGHTGREEN);
+        rectangle((int)(menuSizeX*0.5)-49,(int)(menuSizeY*0.75)+1,(int)(menuSizeX*0.5)+49,(int)(menuSizeY*0.75)+29);
     }
     rectangle((int)(menuSizeX*0.5)-50,(int)(menuSizeY*0.75),(int)(menuSizeX*0.5)+50,(int)(menuSizeY*0.75)+30);
     outtextxy((int)(menuSizeX*0.5)-50,(int)(menuSizeY*0.75),"BACK");

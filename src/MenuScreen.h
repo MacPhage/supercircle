@@ -99,6 +99,7 @@ void drawMenuScreen()
     if(selectedMenuItem == 0)
     {
         setcolor(LIGHTGREEN);
+        rectangle((int)(menuSizeX*0.05)+1,(int)(menuSizeY*0.4)+1,(int)(menuSizeX*0.05)+99,(int)(menuSizeY*0.4)+24);
     }
     rectangle((int)(menuSizeX*0.05),(int)(menuSizeY*0.4),(int)(menuSizeX*0.05)+100,(int)(menuSizeY*0.4)+25);
     outtextxy((int)(menuSizeX*0.05),(int)(menuSizeY*0.4),"START");
@@ -107,6 +108,7 @@ void drawMenuScreen()
     if(selectedMenuItem == 1)
     {
         setcolor(LIGHTGREEN);
+        rectangle((int)(menuSizeX*0.05+1),(int)(menuSizeY*0.4)+31,(int)(menuSizeX*0.05)+99,(int)(menuSizeY*0.4)+54);
     }
     rectangle((int)(menuSizeX*0.05),(int)(menuSizeY*0.4)+30,(int)(menuSizeX*0.05)+100,(int)(menuSizeY*0.4)+55);
     outtextxy((int)(menuSizeX*0.05),(int)(menuSizeY*0.4)+30,"HELP");
@@ -115,6 +117,7 @@ void drawMenuScreen()
     if(selectedMenuItem == 2)
     {
         setcolor(LIGHTGREEN);
+        rectangle((int)(menuSizeX*0.05)+1,(int)(menuSizeY*0.4)+61,(int)(menuSizeX*0.05)+99,(int)(menuSizeY*0.4)+84);
     }
     rectangle((int)(menuSizeX*0.05),(int)(menuSizeY*0.4)+60,(int)(menuSizeX*0.05)+100,(int)(menuSizeY*0.4)+85);
     outtextxy((int)(menuSizeX*0.05),(int)(menuSizeY*0.4)+60,"QUIT");

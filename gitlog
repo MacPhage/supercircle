@@ -1,3 +1,21 @@
+[33mcommit c293b9b34c5fd321fd4dad67fd87488395782888[m
+Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
+Date:   Sat Jan 11 21:00:02 2014 -0600
+
+    [build 168] Improved menu interface and added help text
+
+[33mcommit c70401829c61875881dd8984c2e4fc1a802894e7[m
+Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
+Date:   Sat Jan 11 18:40:12 2014 -0600
+
+    [build 141] Improved menu functionality
+
+[33mcommit 43f9438c341cc16e6d8047bab66ec49248e53224[m
+Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
+Date:   Sat Jan 11 15:56:07 2014 -0600
+
+    Updated Git log
+
 [33mcommit ca820184a22835ecb713d0a9c39b7c90e420365a[m
 Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
 Date:   Sat Jan 11 15:51:50 2014 -0600
