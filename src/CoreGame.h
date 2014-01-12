@@ -69,7 +69,7 @@ void heartbeat()
 
     cleardevice();
     circle(windowX/2,windowY/2,centerCircleRadius); //CENTER CIRCLE
-    line(windowX/2,windowX/2,windowX,windowY/2); //BLOCKING LINE
+    line((windowX/2)+centerCircleRadius,windowX/2,windowX,windowY/2); //BLOCKING LINE
     arc(windowX/2,windowY/2,player.getOccupationA1(),player.getOccupationA2(),player.getRadius()); //THE PLAYER
     outtextxy(0,40,"Current walls: ");
     if(wall0.getState() == true)

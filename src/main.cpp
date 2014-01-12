@@ -17,8 +17,19 @@ using namespace std;
 
 int release = VER_RELEASE;
 
+POINT p;
+
 int main()
 {
+
+    /*for(;;)
+    {
+        if(GetCursorPos(&p))
+        {
+            cout<<"("<<p.x<<","<<p.y<<")"<<endl;
+        }
+
+    }*/
     cout<<"Version: "<<VER_STRING<<endl;
     if(release == 0)
     {

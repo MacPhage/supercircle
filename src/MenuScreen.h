@@ -83,7 +83,14 @@ void menuScreen()
             }
         }
         drawMenuScreen();
-        menuArcOffset++;
+        if(menuArcOffset >= 360)
+        {
+            menuArcOffset = 0;
+        }
+        else
+        {
+            menuArcOffset++;
+        }
 	}
 }
 

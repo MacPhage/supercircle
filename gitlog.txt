@@ -1,3 +1,9 @@
+[33mcommit 918d5b0b599c9ea8f1e8cb2c65bdfeb7c4c33135[m
+Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
+Date:   Sat Jan 11 21:18:10 2014 -0600
+
+    [build 172] Made GUI highlighting thicker
+
 [33mcommit c293b9b34c5fd321fd4dad67fd87488395782888[m
 Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
 Date:   Sat Jan 11 21:00:02 2014 -0600
@@ -56,7 +62,7 @@ Date:   Sat Jan 11 01:35:53 2014 -0600
 Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
 Date:   Sat Jan 11 01:21:44 2014 -0600
 
-    [build 41] Successful player/wall collision algorythym and implementation with wall0
+    [build 41] Successful player/wall collision algorithm and implementation with wall0
 
 [33mcommit ad5664567796cc1084789073d34a2b9d4a28fc97[m
 Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
