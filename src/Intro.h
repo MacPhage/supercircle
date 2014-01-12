@@ -10,7 +10,7 @@
 //  http://www.ruthlessphysics.com/potent/
 //
 
-#include "GameMenu.h"
+#include "MenuScreen.h"
 
 //WINBGIm COLORS
 #define BLACK 0

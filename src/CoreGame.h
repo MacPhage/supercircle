@@ -24,8 +24,6 @@ GameArc wall5;
 
 int windowX = 600;
 int windowY = 600;
-char currentKey;
-int keyTimer;
 int centerCircleRadius = windowX / 8;
 int gameSpeed = 5;
 int printOccurence = 0;

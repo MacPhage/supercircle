@@ -1,5 +1,5 @@
 //
-//  GameMenu.cpp
+//  MenuScreen.cpp
 //  Potent Game02
 //
 //  C++ Header File
@@ -10,23 +10,16 @@
 //  http://www.ruthlessphysics.com/potent/
 //
 
-#include "LibVenom.h"
+#include "HelpScreen.h"
 
 using namespace std;
 
-unsigned int selectedMenuItem = 0U;
-int menuSizeX = 400;
-int menuSizeY = 300;
-int menuItemMax = 1;
+void menuScreen();
+void drawMenuScreen();
 
-void gameMenu();
-void drawGameMenu();
-
-void gameMenu()
+void menuScreen()
 {
 	initwindow(menuSizeX,menuSizeY,"Potent \'Game02\' Menu");
-	char currentKey;
-    unsigned int keyTimer;
 	for(;;)
 	{
         if(keyTimer > 0U)
@@ -44,9 +37,9 @@ void gameMenu()
             cout<<"(KEY_ESC)"<<endl;
             break;
         }
-        else if(currentKey == KEY_LEFT && keyTimer > 0U)
+        else if(currentKey == KEY_UP && keyTimer > 0U)
         {
-            cout<<"(KEY_LEFT)"<<endl;
+            cout<<"(KEY_UP)"<<endl;
             if(selectedMenuItem == 0U)
             {
                 //
@@ -57,9 +50,9 @@ void gameMenu()
             }
             cout<<selectedMenuItem<<endl;
         }
-        else if(currentKey == KEY_RIGHT && keyTimer > 0U)
+        else if(currentKey == KEY_DOWN && keyTimer > 0U)
         {
-            cout<<"(KEY_RIGHT)"<<endl;
+            cout<<"(KEY_DOWN)"<<endl;
             selectedMenuItem++;
             if(selectedMenuItem > menuItemMax)
             {
@@ -78,32 +71,39 @@ void gameMenu()
             }
             if(selectedMenuItem == 1)
             {
+                closegraph();
+                helpScreen();
+            }
+            if(selectedMenuItem == 2)
+            {
                 cout<<"\nQuitting...\n"<<endl;
                 willQuit = true;
                 break;
             }
         }
-        drawGameMenu();
+        drawMenuScreen();
 	}
 }
 
-void drawGameMenu()
+void drawMenuScreen()
 {
-    outtextxy((menuSizeX/2)-30,menuSizeY/4,"Super Circle");
+    outtextxy((int)(menuSizeX*0.05),(int)(menuSizeY*0.20),"Super Circle");
     outtextxy(0,menuSizeY-20,"Try using the arrow keys and the spacebar!");
+
     if(selectedMenuItem == 0)
     {
         setcolor(LIGHTGREEN);
     }
-    rectangle(menuSizeX/4,menuSizeY/2,(menuSizeX/2)-30,(menuSizeY/2)+30);
-    outtextxy(menuSizeX/4,menuSizeY/2,"START");
+    rectangle((int)(menuSizeX*0.05),(int)(menuSizeY*0.4),(int)(menuSizeX*0.05)+100,(int)(menuSizeY*0.4)+25);
+    outtextxy((int)(menuSizeX*0.05),(int)(menuSizeY*0.4),"START");
     setcolor(WHITE);
-    
+
     if(selectedMenuItem == 1)
     {
         setcolor(LIGHTGREEN);
     }
-    rectangle((menuSizeX/2)+30,menuSizeY/2,(int)(menuSizeX*0.75),(menuSizeY/2)+30);
-    outtextxy((menuSizeX/2)+30,menuSizeY/2,"QUIT");
+    rectangle((int)(menuSizeX*0.05),(int)(menuSizeY*0.4)+30,(int)(menuSizeX*0.05)+100,(int)(menuSizeY*0.4)+55);
+    outtextxy((int)(menuSizeX*0.05),(int)(menuSizeY*0.4)+30,"HELP");
     setcolor(WHITE);
+
 }

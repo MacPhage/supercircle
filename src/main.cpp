@@ -26,7 +26,7 @@ int main()
         system("PAUSE");
         cout<<"Please select the graphics window."<<endl;
     }
-    gameMenu();
+    menuScreen();
     if(willQuit == true)
     {
         return 0;
@@ -54,10 +54,10 @@ int main()
             cout<<"\n** COLLISION OCCURED **"<<endl;
             setcolor(LIGHTRED);
             outtextxy(0,0,"** COLLISION OCCURED **");
-            outtextxy(0,20,"Press any key in the console window to quit.");
+            outtextxy(0,20,"Game will close in 5 seconds.");
             if(invincible == false)
             {
-                system("PAUSE");
+                delay(5000);
                 break;
             }
             else
