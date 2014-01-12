@@ -35,6 +35,7 @@ void menuScreen()
         if(currentKey == KEY_ESC && keyTimer > 0U)
         {
             cout<<"(KEY_ESC)"<<endl;
+            willQuit = true;
             break;
         }
         else if(currentKey == KEY_UP && keyTimer > 0U)
@@ -82,13 +83,18 @@ void menuScreen()
             }
         }
         drawMenuScreen();
+        menuArcOffset++;
 	}
 }
 
 void drawMenuScreen()
 {
-    outtextxy((int)(menuSizeX*0.05),(int)(menuSizeY*0.20),"Super Circle");
+    cleardevice();
+    outtextxy((int)(menuSizeX*0.05),(int)(menuSizeY*0.1),"Super Circle");
     outtextxy(0,menuSizeY-20,"Try using the arrow keys and the spacebar!");
+
+    circle((int)(menuSizeX*0.60),(int)(menuSizeY*0.5),(int)(menuSizeX*0.25));
+    arc((int)(menuSizeX*0.60),(int)(menuSizeY*0.5),0+menuArcOffset,30+menuArcOffset,(int)(menuSizeX*0.25)+30);
 
     if(selectedMenuItem == 0)
     {
@@ -104,6 +110,14 @@ void drawMenuScreen()
     }
     rectangle((int)(menuSizeX*0.05),(int)(menuSizeY*0.4)+30,(int)(menuSizeX*0.05)+100,(int)(menuSizeY*0.4)+55);
     outtextxy((int)(menuSizeX*0.05),(int)(menuSizeY*0.4)+30,"HELP");
+    setcolor(WHITE);
+    
+    if(selectedMenuItem == 2)
+    {
+        setcolor(LIGHTGREEN);
+    }
+    rectangle((int)(menuSizeX*0.05),(int)(menuSizeY*0.4)+60,(int)(menuSizeX*0.05)+100,(int)(menuSizeY*0.4)+85);
+    outtextxy((int)(menuSizeX*0.05),(int)(menuSizeY*0.4)+60,"QUIT");
     setcolor(WHITE);
 
 }

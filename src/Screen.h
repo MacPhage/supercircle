@@ -17,6 +17,7 @@ using namespace std;
 unsigned int selectedMenuItem = 0U;
 int menuSizeX = 600;
 int menuSizeY = 450;
-int menuItemMax = 1;
+int menuItemMax = 2;
+int menuArcOffset = 0;
 char currentKey;
 int keyTimer;

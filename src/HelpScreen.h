@@ -16,6 +16,7 @@ using namespace std;
 
 void helpScreen();
 void drawHelpScreen();
+void drawHelpText();
 
 void helpScreen()
 {
@@ -76,7 +77,8 @@ void helpScreen()
 
 void drawHelpScreen()
 {
-    outtextxy((int)(menuSizeX*0.5)-10,menuSizeY/4,"Help");
+    outtextxy((int)(menuSizeX*0.5)-10,(int)(menuSizeY*0.05),"Help");
+    drawHelpText();
     if(selectedMenuItem == 0)
     {
         setcolor(LIGHTGREEN);
@@ -84,4 +86,19 @@ void drawHelpScreen()
     rectangle((int)(menuSizeX*0.5)-50,(int)(menuSizeY*0.75),(int)(menuSizeX*0.5)+50,(int)(menuSizeY*0.75)+30);
     outtextxy((int)(menuSizeX*0.5)-50,(int)(menuSizeY*0.75),"BACK");
     setcolor(WHITE);
+}
+
+void drawHelpText()
+{
+    int X = (int)(menuSizeX*0.05);
+    int Y = (int)(menuSizeY*0.25);
+    outtextxy(X,Y+0,"\'Super Circle\' is a remake of Terry Cavanagh's popular indie game");
+    outtextxy(X,Y+17,"\'Super Hexagon,\' by high school freshman Austin Jackson.");
+    outtextxy(X,Y+51,"To play, use the arrow keys to avoid incoming arcs.");
+    outtextxy(X,Y+68,"Try to last as long as you can!");
+    outtextxy(X,Y+102,"\'Super Hexagon\' is available on DistractionWare.com, be sure to check it out!");
+    outtextxy(X,Y+119,"You can press ESC to close the game at any time,");
+    outtextxy(X,Y+136,"and SPACEBAR to press the highlighted button below");
+    outtextxy(X,Y+170,"Try to have fun! :)");
+    outtextxy(X,Y+187,"-Austin");
 }
