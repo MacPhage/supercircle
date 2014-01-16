@@ -44,6 +44,7 @@ void dropWall5();
 
 void heartbeat()
 {
+	delay(10);
     heartbeatCount++;
     if(keyTimer > 0)
     {

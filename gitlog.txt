@@ -1,3 +1,9 @@
+[33mcommit 1a39f9434ad635a4b0aa13eef28f2356e73a113c[m
+Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
+Date:   Sun Jan 12 12:38:06 2014 -0600
+
+    [build 183] Small graphical tweaks and hidden mouse tests
+
 [33mcommit 918d5b0b599c9ea8f1e8cb2c65bdfeb7c4c33135[m
 Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
 Date:   Sat Jan 11 21:18:10 2014 -0600
@@ -62,7 +68,7 @@ Date:   Sat Jan 11 01:35:53 2014 -0600
 Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
 Date:   Sat Jan 11 01:21:44 2014 -0600
 
-    [build 41] Successful player/wall collision algorithm and implementation with wall0
+    [build 41] Successful player/wall collision algorythym and implementation with wall0
 
 [33mcommit ad5664567796cc1084789073d34a2b9d4a28fc97[m
 Author: Austin Jackson mac@ruthlessphysics.com <mac@ruthlessphysics.com>
