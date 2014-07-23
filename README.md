@@ -1,4 +1,4 @@
-supercircle
+SuperCircle
 ===========
 
 A graphics.h recreation of indie game Super Hexagon
