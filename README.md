@@ -1,7 +1,7 @@
 SuperCircle
 ===========
 
-A graphics.h recreation of indie game Super Hexagon
+A graphics.h recreation of indie game Super Hexagon (**DEPRECATED**)
 
 
 Super Circle is a remake of Terry Cavanagh's popular indie game Super Hexagon, by high school freshman Austin Jackson.
