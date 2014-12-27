@@ -1,3 +1,6 @@
+Forwarning: This game was never finished, and probably won't ever be.
+-------
+
 SuperCircle
 ===========
 
